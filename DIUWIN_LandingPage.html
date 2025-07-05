@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIUWIN</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #003300, #001a00);
+      background-size: 400% 400%;
+      animation: gradientMove 20s ease infinite;
+      color: #ccffcc;
+      text-align: center;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes pulseGlow {
+      0%,100% { text-shadow: 0 0 15px #66ff66, 0 0 10px #33cc33; }
+      50% { text-shadow: 0 0 25px #99ff99, 0 0 15px #66ff66; }
+    }
+    @keyframes shine {
+      from { left: -75%; }
+      to { left: 125%; }
+    }
+    .container {
+      padding: 50px 20px;
+      max-width: 700px;
+      margin: auto;
+      backdrop-filter: blur(4px);
+    }
+    .logo {
+      width: 130px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 50px #66ff66, 0 0 20px #33cc33;
+      transition: transform 0.3s ease;
+    }
+    .logo:hover {
+      transform: scale(1.1);
+    }
+    .glow-title {
+      font-size: 3.2em;
+      color: #ccffcc;
+      animation: pulseGlow 2.5s ease infinite;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      color: #caffca;
+      text-shadow: 0 0 4px #ffffff1a;
+    }
+    .btn {
+      position: relative;
+      display: inline-block;
+      padding: 14px 30px;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 2rem;
+      margin: 10px;
+      text-decoration: none;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .registerbtn {
+      background: linear-gradient(145deg, #66ff66, #33cc33);
+      color: #000;
+      box-shadow: 0 0 20px #66ff66;
+    }
+    .registerbtn:hover {
+      background: linear-gradient(145deg, #99ff99, #00cc66);
+      box-shadow: 0 0 25px #99ff99;
+      transform: scale(1.05);
+    }
+    .loginbtn {
+      background: transparent;
+      color: #66ff66;
+      border: 2px solid #66ff66;
+      box-shadow: 0 0 10px #66ff66;
+    }
+    .loginbtn:hover {
+      background-color: #66ff66;
+      color: #000;
+      transform: scale(1.05);
+    }
+    .cta-button {
+      background: linear-gradient(135deg, #66ff66, #33cc33);
+      color: #000;
+      padding: 15px 35px;
+      font-size: 1em;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #66ff66, 0 0 10px #33cc33;
+      transition: transform 0.3s ease;
+    }
+    .cta-button::before {
+      content: "";
+      position: absolute;
+      top: 0; left: -75%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255,255,255,0.3);
+      transform: skewX(-20deg);
+    }
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+    .cta-button:hover::before {
+      animation: shine 1s forwards;
+    }
+    .glow-card {
+      border: 2px solid #66ff66;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #66ff66;
+      margin: 20px 0;
+      animation: pulseGlow 3.5s ease infinite;
+      transition: transform 0.3s ease;
+    }
+    .glow-card:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+    .ref-code {
+      font-size: 1.8em;
+      color: #00ff66;
+      margin-top: 10px;
+    }
+    .contact-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+    }
+    .support-girl {
+      width: 160px;
+      border-radius: 10px;
+      margin-top: 15px;
+      box-shadow: 0 0 20px #66ff66;
+    }
+    .info-section {
+      background-color: #00330088;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #33cc33;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 0.85em;
+      color: #bbffdd;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="bharatclub-logo.png" alt="DIUWIN Logo" class="logo" />
+    <h1 class="glow-title">DIUWIN</h1>
+
+    <a href="https://www.diuwin4.com/#/register?invitationCode=1884411405644" class="btn registerbtn">Join Now</a>
+    <a href="https://www.diuwin4.com/#/register?invitationCode=1884411405644" class="btn loginbtn">Member Login</a>
+
+    <div class="glow-card">
+      <h2>🔥 Use Code Below to Get ₹100 Bonus</h2>
+      <div class="ref-code">1884411405644</div>
+    </div>
+
+    <p>🔔 <strong>DIUWIN</strong> is now offering an instant ₹28 bonus upon registration 🔔</p>
+    <p>🎮 But a recharge is required to place bets in the game</p>
+    <p>🎁 Daily gift codes, sign-up, first deposit & referral bonuses available!</p>
+
+    <a href="https://www.diuwin4.com/#/register?invitationCode=1884411405644" class="btn cta-button">🚀 Launch Platform</a>
+
+    <div class="contact-row">
+      <a href="https://t.me/khargosagencies" class="btn loginbtn">📱 Contact on Telegram</a>
+      <img src="girl-support.png" alt="Support Girl" class="support-girl" />
+    </div>
+
+    <div class="info-section">
+      <h2>About DIUWIN</h2>
+      <p>DIUWIN keeps your money safe and provides instant withdrawals. Join over 2 lakh+ players earning from India’s top color prediction game daily!</p>
+
+      <h3>How to Register?</h3>
+      <ol>
+        <li>Open your browser and search DIUWIN Colour Prediction.</li>
+        <li>Visit the official site and click Register.</li>
+        <li>Use referral code <strong>1884411405644</strong> for instant bonus.</li>
+        <li>Bind your bank and start playing.</li>
+      </ol>
+
+      <p>For support or predictions: <strong>@khargosagencies</strong></p>
+    </div>
+
+    <div class="footer">
+      © 2025 DIUWIN. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
